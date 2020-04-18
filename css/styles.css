@@ -2,74 +2,78 @@
     font-family: 'Gill Sans';
     font-size: 10px;
     margin-left: 0; 
+    margin-top: 0;
     
+}
+header {
+    position: relative;
+    width: 100%;
+    height:325px;
+    background: url(/img/seascape.png) center no-repeat;
+    background-size: 100%;
+    overflow: hidden;
 }
 
 .intro, .project, .year{
+    position:relative;
     margin:auto;
     width: 100%;
     margin-right: 10rem;
+    text-align: center;
 } 
 .intro h1{
     font-family: 'Gill Sans';
-    font-size: 5rem;
+    font-size: 6rem;
     font-weight: 600;
     text-align: right;
-    margin-right: 10rem;
+    margin-right: 20rem;
+    margin-top:-.25rem;
     color: #638d85;
-    text-shadow: 1px 1px black;
-    padding-top: 10px;
+    text-shadow: 1px 1px white;
+    
 
 }
 .project h2{
     font-size: 3rem;
     text-align: right;
-    margin-right: 15rem;
-    margin-top: -3rem;  
-    color: #c2bf9d;
-    text-shadow: 1px 1px black;
+    margin-right: 30rem;
+    margin-top: -4rem;  
+    color: #638d85;
+    text-shadow: 2px 1.5px white;
 }
 .year h2{
     padding-top: 10px;
     font-size: 5rem;
     color:#a9bfc2;
-    text-shadow: 2px 2px white;
+    text-shadow: 2px 1.5px black;
     
 }
-header {
-    position: relative;
-    max-height: 40%;
-    width: 100%;
-    background: url(/img/seascape.png) center no-repeat;
-    background-size: 100%;
-    color: #638d85;
-    margin-top: -3.5rem;
-}
-
 header img{
     position: relative;
-    margin-left: 0;
-    margin-top: -21rem;
-    height: 300px;
-   
+    height: 100%;
+    opacity: 1;
+    padding-left: 5px;
+    margin-top: -20.4rem;
+    
 }
 header img:hover{
-    opacity: 0.75;
+    opacity: .8;
 }
+
 main{
-    font-family: 'Gill Sans';
     background-color: #c2bf9d;
-    height: 100%;
-    width:auto;
-    margin-top: -3.5rem;
+    width:100%;
+    height: 5rem;
+    margin-top: -.25rem;
+
 }
 main p{
     font-size: 2rem;
     color: white;
     font-family: 'Gill Sans';
-    padding-top: 50px;
+    padding-top: 15px;
     text-align: center;
-    opacity: 0.75;
+    opacity:0.75;
 }
 html, body{
     width: 100%;
@@ -77,4 +81,5 @@ html, body{
     margin: 0px;
     padding: 0px;
     overflow-x: hidden; 
+    overflow-y: hidden;
 }
