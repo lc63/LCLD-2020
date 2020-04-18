@@ -1,69 +1,75 @@
 * { 
-    font-family: 'Helvetica';
+    font-family: 'Gill Sans';
     font-size: 10px;
     margin-left: 0; 
     
 }
-h1,h2 {
-    font-family: 'Helvetica';
-    padding-top: 0px;
-}
-.intro {
+
+.intro, .project, .year{
     margin:auto;
-    margin-left: -1rem;
-    width: 1170px;
-    text-align: left;
-    padding-right: 4rem;
-    padding-left: 2rem;
-    padding-top: 20px;
-}
+    width: 100%;
+    margin-right: 10rem;
+} 
 .intro h1{
     font-family: 'Gill Sans';
     font-size: 5rem;
     font-weight: 600;
-    color: black;
+    text-align: right;
+    margin-right: 10rem;
+    color: #638d85;
+    text-shadow: 1px 1px black;
+    padding-top: 10px;
+
 }
 .project h2{
     font-size: 3rem;
-    margin-bottom:-.5rem;
-    max-width: 300px;
-    margin-top: -1.5rem;  
-    margin-left: 2rem;
+    text-align: right;
+    margin-right: 15rem;
+    margin-top: -3rem;  
+    color: #c2bf9d;
+    text-shadow: 1px 1px black;
 }
 .year h2{
-    text-align: right;
-    max-width: 200px;
-    padding-top: 5px;
-    font-size: 6rem;
-    color: black;
+    padding-top: 10px;
+    font-size: 5rem;
+    color:#a9bfc2;
+    text-shadow: 2px 2px white;
+    
 }
 header {
-    height: 350px;
+    position: relative;
+    max-height: 40%;
     width: 100%;
     background: url(/img/seascape.png) center no-repeat;
     background-size: 100%;
-    color: black;
-    margin-top: -2.5rem;
+    color: #638d85;
+    margin-top: -3.5rem;
 }
-.overlay img{
-    position: relative;
-    margin-top:-27rem;
-    margin-left: 95rem;
-    height: 326px;
-    transition: height;
-    transition-duration: .5s;
-    
-}
-.overlay img:hover{
-    height: 350px;
- 
 
+header img{
+    position: relative;
+    margin-left: 0;
+    margin-top: -21rem;
+    height: 300px;
+   
+}
+header img:hover{
+    opacity: 0.75;
 }
 main{
-    background-color: black;
-    height: 1300px;
+    font-family: 'Gill Sans';
+    background-color: #c2bf9d;
+    height: 100%;
+    width:auto;
     margin-top: -3.5rem;
+}
+main p{
+    font-size: 2rem;
     color: white;
+    font-family: 'Gill Sans';
+    padding-top: 50px;
+    text-align: center;
+    opacity: 0.75;
 }
 html, body{
     width: 100%;
