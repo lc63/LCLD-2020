@@ -1,0 +1,25 @@
+{
+  "name": "LCLD-2020",
+  "version": "1.0.0",
+  "description": "It showcases: - Graphs and tables - Textual analysis of the data - Recommendations for the District's upcoming feedback campaign",
+  "main": "index.js",
+  "dependencies": {
+    "browser-sync": "^2.26.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "./node_modules/.bin/browser-sync  start --server --files='**/*'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lc63/LCLD-2020.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lc63/LCLD-2020/issues"
+  },
+  "homepage": "https://github.com/lc63/LCLD-2020#readme"
+}
