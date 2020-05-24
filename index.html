@@ -14,6 +14,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
+
     <link rel="stylesheet" href="css/styles.css" />
     <link
       rel="stylesheet"
@@ -35,7 +36,7 @@
           data-toggle="collapse"
           data-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent"
-          aria-expanded="false"
+          aria-expanded="true"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
@@ -44,20 +45,23 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="../LCLD-2020/index.html"
+              <a class="nav-link" href="/index.html"
                 >Home <span class="sr-only">(current)</span></a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../LCLD-2020/profile.html"
-                >Community Profile</a
-              >
+              <a class="nav-link" href="/summary.html">County Summary</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../LCLD-2020/feedback.html"
+              <a class="nav-link" href="/libraries.html">Libraries and Patrons</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/feedback.html"
                 >Feedback Campaign</a
               >
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/deliverables.html">Deliverables</a>
           </ul>
           <form class="form-inline my-2 my-lg-0">
             <input
@@ -68,7 +72,6 @@
             />
             <button
               class="btn btn-dark my-2 my-sm-0"
-              style="color: white; border: white;"
               type="submit"
             >
               Search
@@ -85,24 +88,37 @@
       </div>
     </div>
     </header>
-    <main>
+    <main style="padding-bottom: 100px;">
+<div class="card">
+  <div class="card-body bg-light"style="text-align: center;">
+    Lincoln County Library District (LCLD) was formed to extend city library services to residents of unincorporated regions
+    of
+    Lincoln County. A community profile evaluates the extent of existing rural LCLD library services and their utilization
+    rates. It also establishes population dispersals, best practices for communicating with user groups (including languages
+    and platforms), and capacity for service adjustment or expansion. This profile informed the design of a community
+    feedback campaign including survey questions, modes of distribution, and location targets. The feedback collected will
+    allow for deliberate allocation of funds and a strategic expansion of library services to remote areas of Lincoln
+    County.
+  </div>
+</div>
       <!--Begin card grid-->
       <div class="containers" >
-        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-1 row-cols-xl-3">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
           <div class="col mb-4">
-            <div class="card border-light shadow">
+            <div class="card shadow">
               <img
                 src="img/east_county.jpg"
                 class="card-img-top"
                 alt="tree branches with lichen"
               />
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
+                <h5 class="card-title">Lincoln County Summary</h5>
+                <p class="card-text"style="color: black; font-size:1rem;">
+                  Lincoln County demographics, District election data, and maps. 
                 </p>
+                <div class="card-footer">
+                <a href="/summary.html" class="btn btn-dark">Summary</a>
+                </div>
               </div>
             </div>
           </div>
@@ -114,12 +130,13 @@
                 alt="ocean view with plants in foreground"
               />
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
+                <h5 class="card-title">Library User Demographics</h5>
+                <p class="card-text"style="color: black;font-size:1rem;">
+                  An analysis of Lincoln County Libraries, their service areas, and current user demographics. 
                 </p>
+                <div class="card-footer">
+                <a href="/libraries.html" class="btn btn-dark">Libraries and Patrons</a>
+                </div>
               </div>
             </div>
           </div>
@@ -127,11 +144,13 @@
             <div class="card shadow">
               <img src="/img/rose_lodge.jpg" class="card-img-top" alt="..." />
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content.
+                <h5 class="card-title">Feedback Campaign Design</h5>
+                <p class="card-text"style="color: black;font-size:1rem;">
+                  A feedback campaign will ask residents about their hopes and challenges to inform funding and service priorities.
                 </p>
+                <div class="card-footer">
+                <a href="/feedback.html" class="btn btn-dark">Feedback Campaign</a>
+                </div>
               </div>
             </div>
           </div>
@@ -143,12 +162,13 @@
                 alt="mossy rocks on coast"
               />
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
+                <h5 class="card-title">Capstone Deliverables</h5>
+                <p class="card-text" style="color: black;font-size:1rem;">
+               A video, report, and poster that describe project goals, data sources, and detailed County demographics. 
                 </p>
+                <div class="card-footer">
+                <a href="/deliverables.html.html" class="btn btn-dark">Deliverables </a>
+                </div>
               </div>
             </div>
           </div>
@@ -156,5 +176,34 @@
       </div>
      <!-- End card grid-->
     </main>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
   </body>
+  <script type="javascript" src="dist/js/bootstrap.js"></script>
+  <footer>
+    <div class="container">
+      <p>
+        <a href="https://www.facebook.com/lincolncountylibrarydistrict/">
+          <svg aria-labelledby="simpleicons-facebook-icon" role="img" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <title id="simpleicons-facebook-icon">Facebook icon</title>
+            <path
+              d="M22.676 0H1.324C.593 0 0 .593 0 1.324v21.352C0 23.408.593 24 1.324 24h11.494v-9.294H9.689v-3.621h3.129V8.41c0-3.099 1.894-4.785 4.659-4.785 1.325 0 2.464.097 2.796.141v3.24h-1.921c-1.5 0-1.792.721-1.792 1.771v2.311h3.584l-.465 3.63H16.56V24h6.115c.733 0 1.325-.592 1.325-1.324V1.324C24 .593 23.408 0 22.676 0" />
+          </svg>
+        </a>
+        <a href="mailto:">
+          <svg aria-labelledby="simpleicons-gmail-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <title id="simpleicons-gmail-icon">Gmail icon</title>
+            <path
+              d="M24 4.5v15c0 .85-.65 1.5-1.5 1.5H21V7.387l-9 6.463-9-6.463V21H1.5C.649 21 0 20.35 0 19.5v-15c0-.425.162-.8.431-1.068C.7 3.16 1.076 3 1.5 3H2l10 7.25L22 3h.5c.425 0 .8.162 1.069.432.27.268.431.643.431 1.068z" />
+          </svg>
+        </a>
+      </p>
+      <p>&copy; Lincoln County Library District 2020</p>
+    </div>
+  </footer>
 </html>
