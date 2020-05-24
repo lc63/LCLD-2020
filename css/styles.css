@@ -63,7 +63,6 @@ main p {
   text-align: center;
   height: 100%;
 }
-
 .card {
   margin-bottom: 20px;
 }
@@ -72,6 +71,10 @@ main p {
 }
 .card-footer {
   text-align: center;
+}
+.btn:hover {
+  width: 105%;
+  height: 105%;
 }
 footer {
   background-color: black;
