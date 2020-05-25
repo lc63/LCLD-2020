@@ -9,18 +9,18 @@
   background-color: black;
 }
 
-body {
+/*body {
   opacity: 1;
   transition: 1s opacity;
 }
 body.fade-out {
   opacity: 0;
   transition: none;
-}
+}*/
 
-button:hover {
+/*button:hover {
   fill: white;
-}
+}*/
 header {
   display: flex;
   flex-wrap: wrap;
@@ -32,10 +32,11 @@ header {
   height: 300px;
   background-color: black;
 }
-table {
+thead {
   font: "Gill Sans";
   color: #c2bfc2;
 }
+
 .squared {
   padding-top: 5px;
   position: static;
@@ -78,10 +79,13 @@ label {
 tbody {
   color: white;
 }
-/*.btn:hover {
-  width: 105%;
-  height: 105%;
-}*/
+h5 {
+  text-decoration: none;
+}
+.btn:hover {
+  background-color: #a9bfc2;
+}
+
 /*.hiddenItem {
   display: none;
 }*/
