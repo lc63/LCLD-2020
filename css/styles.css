@@ -72,16 +72,26 @@ main p {
 .card-footer {
   text-align: center;
 }
-.btn:hover {
+label {
+  color: white;
+}
+tbody {
+  color: white;
+}
+/*.btn:hover {
   width: 105%;
   height: 105%;
-}
+}*/
+/*.hiddenItem {
+  display: none;
+}*/
 footer {
   background-color: black;
   width: 100%;
   color: white;
   text-decoration: none;
   padding-top: 20px;
+  padding-bottom: 20px;
   text-align: center;
   position: fixed;
   left: 0;

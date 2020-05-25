@@ -1,32 +1,24 @@
 function renderRegions(region_list) {
+  region_list.sort(function (record1, record2) {
+    return record2.voterTurnout - record1.voterTurnout;
+  });
+
   var tbody = document.querySelector("tbody");
   tbody.textContent = "";
-  region_list.forEach(function (region) {
-    tbody.appendChild(renderRegion(region));
-  });
+  for (var i = 0; i < region_list.length; i++) {
+    var row = renderRegion(region_list[i]);
+
+    tbody.appendChild(row);
+  }
 }
-
-/*var filterName = title.filter(function (p)){
-    return (p.name = userInput);
-  };*/
-
-function renderRegion(regions) {
-  /*REGIONS.sort(function (record1, record2) {
-      return record2.voterTurnout - record1.voterTurnout;
-    });*/
-
+function renderRegion(region) {
   var tr = document.createElement("tr");
-  var prop = renderRegionProp(regions.name, true);
-  var prop2 = renderRegionProp(regions.voterTurnout, false);
-  var prop3 = renderRegionProp(regions.yesVotes, false);
-  var prop4 = renderRegionProp(regions.library, true);
-  var prop5 = renderRegionProp(regions.distanceToLibrary, false);
 
-  tr.appendChild(prop);
-  tr.appendChild(prop2);
-  tr.appendChild(prop3);
-  tr.appendChild(prop4);
-  tr.appendChild(prop5);
+  tr.appendChild(renderRegionProp(region.name, true));
+  tr.appendChild(renderRegionProp(region.voterTurnout));
+  tr.appendChild(renderRegionProp(region.yesVotes));
+  tr.appendChild(renderRegionProp(region.library));
+  tr.appendChild(renderRegionProp(region.distanceToLibrary));
 
   return tr;
 }
@@ -39,10 +31,22 @@ function renderRegionProp(value, nonNumeric) {
   }
   return td;
 }
-renderRegions(REGIONS);
 
-/*var userInput = document.getElementById("movie-filter");
-userInput.addEventListener("input", function filterTitles(arr, userInput) {
-    return arr.filter(function (movies.title) {
-        return movies.title.toLowerCase().indexOf(userInput.toLowerCase())
-    })*/
+var searchInput = document.getElementById("choose-region");
+
+function regionName(region) {
+  var userInput = searchInput.value;
+  var lowUserInput = userInput.toLowerCase();
+  var lowTitle = region.name.toLowerCase();
+  if (lowTitle.indexOf(lowUserInput) >= 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+searchInput.addEventListener("change", function () {
+  var userInput = searchInput.value;
+  var lowUserInput = userInput.toLowerCase();
+  var filter_regions = REGIONS.filter(regionName);
+  renderRegions(filter_regions);
+});
