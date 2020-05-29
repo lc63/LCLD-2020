@@ -9,18 +9,23 @@
   background-color: black;
 }
 
-/*body {
-  opacity: 1;
-  transition: 1s opacity;
+body {
+  margin: 0;
 }
-body.fade-out {
-  opacity: 0;
-  transition: none;
-}*/
 
-/*button:hover {
-  fill: white;
-}*/
+table {
+  background-color: black;
+}
+
+table th {
+  padding: 11px;
+  background-color: black;
+}
+
+div.card-body p {
+  color: black;
+  font-size: 16px;
+}
 header {
   display: flex;
   flex-wrap: wrap;
@@ -35,6 +40,13 @@ header {
 thead {
   font: "Gill Sans";
   color: #c2bfc2;
+}
+.region-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  padding-bottom: 10px;
 }
 
 .squared {
@@ -62,7 +74,7 @@ main p {
   font-size: 1.5rem;
   color: white;
   text-align: center;
-  height: 100%;
+  height: auto;
 }
 .card {
   margin-bottom: 20px;
@@ -84,9 +96,6 @@ tbody {
   background-color: #a9bfc2;
 }
 
-/*.hiddenItem {
-  display: none;
-}*/
 footer {
   background-color: black;
   width: 100%;
