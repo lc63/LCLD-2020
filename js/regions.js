@@ -1,5 +1,12 @@
 const REGIONS = [
   {
+    name: "County totals",
+    voterTurnout: "35.53",
+    yesVotes: "4780",
+    library: "N/A",
+    distanceToLibrary: "10.72",
+  },
+  {
     name: "Waldport",
     voterTurnout: 42.47,
     yesVotes: 54,

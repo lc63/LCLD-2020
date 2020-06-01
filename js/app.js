@@ -26,9 +26,7 @@ function renderRegion(region) {
 function renderRegionProp(value, nonNumeric) {
   var td = document.createElement("td");
   td.textContent = value;
-  if (nonNumeric) {
-    td.classList.add("non-numeric");
-  }
+
   return td;
 }
 
@@ -44,6 +42,7 @@ function regionName(region) {
     return false;
   }
 }
+
 searchInput.addEventListener("change", function () {
   var userInput = searchInput.value;
   var lowUserInput = userInput.toLowerCase();
