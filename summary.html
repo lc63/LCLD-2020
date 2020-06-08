@@ -26,7 +26,7 @@
         </style>
 </head>
 
-<body>
+<body style="background-color:black;">
 
     <!--Begin Navbar-->
     </div>
@@ -54,7 +54,6 @@
                 <li class="nav-item">
                     <a class="nav-link" href="deliverables.html">Deliverables </a>
             </ul>
-         
         </div>
     </nav>
     <!--End Navbar-->
@@ -66,24 +65,18 @@
         </div>
         </div>
     </header>
-    
-    <main style="padding-bottom: 100px;">
-    <div class="regions">
-        <h3 style="text-align: center; color: white;">Lincoln County Voting Districts</h3>
-        <img src="img/regions_table.png" class="region-img" alt="LCLD regions with names" style="width: 50%;" />
-    </div>
-        <main class="container" style=" background-color: black;">
-           
+    <div class="container">
+    <main style="padding-bottom: 20px;background-color: black;">
+        <div class="container">
             <div class="row py-5">
-               
-                    <div class="col">
+                <div class="col">
                     <form>
                         <div class="form-group">
-                            <label for="animation-select">Choose Region</label>
-                            <select class="form-control" id="choose-region" style="width: 300;"> 
+                            <label for="animation-select">Choose Region to View Results</label>
+                            <select class="form-control" id="choose-region" style="width: 300;">
                                 
-                                <option value="County totals">County totals</option>
                                 <option value="">All</option>
+                                <option value="County totals">County totals</option>
                                 <option value="Waldport">Waldport</option>
                                 <option value="Alsea">Alsea</option>
                                 <option value="Seaview">Seaview</option>
@@ -113,25 +106,47 @@
                         </div>
                     </form>
                     <table>
-                    <class class="table" id="tableID">
-                        <thead class="thead-dark">
-                            <tr> 
-                                <th style="color: #c2bf9d; text-align: left;" scope="col">Name </th>
-                                <th style="color: #c2bf9d; text-align: left;" scope="col">Voter turnout</th>
-                                <th style="color: #c2bf9d;" scope="col">Yes votes</th>
-                                <th style="color: #c2bf9d; text-align: right" scope="col">Closest library</th>
-                                <th style="color: #c2bf9d;" scope="col">Distance to library</th>
-                                
-                            </tr>
-                        </thead>
-                        <tbody></tbody>
+                        <class="table" id="tableID">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th style="color: #0097ad; text-align: left;" scope="col">Name </th>
+                                    <th style="color: #0097ad; text-align: left;" scope="col">Voter turnout</th>
+                                    <th style="color: #0097ad;" scope="col">Yes votes</th>
+                                    <th style="color: #0097ad; text-align: right" scope="col">Closest library</th>
+                                    <th style="color: #0097ad;" scope="col">Distance to library</th>
+            
+                                </tr>
+                            </thead>
+                            <tbody class="table2"></tbody>
                     </table>
-    </main>
-    <div class="regions">
-        <h3 style="text-align: center; color: white;">Lincoln County Voting Districts</h3>
-        <img src="img/regions_table.png" class="region-img" alt="LCLD regions with names" />
-    </div>
-</main>
+                    </div>
+                </main>
+        <div class="container" style="margin-bottom: 6rem;">
+            <div class="card">
+                <div class="card-body " style="text-align: center; background-color: #638d85; color: white; ">
+                    These maps illustrate some of the findings from the community profile. They include population by ZIP code, prevalence of disability by ZIP code, poverty rates, access to vehicles, and household size.
+                </div>
+            </div>
+            <div class='tableauPlaceholder' id='viz1591593813401' style='position: relative'><noscript><a href='#'><img alt=' '
+                            src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CommunityProfile--Lincoln&#47;Population_by_ZIP&#47;1_rss.png'
+                            style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                    <param name='embed_code_version' value='3' />
+                    <param name='site_root' value='' />
+                    <param name='name' value='CommunityProfile--Lincoln&#47;Population_by_ZIP' />
+                    <param name='tabs' value='yes' />
+                    <param name='toolbar' value='yes' />
+                    <param name='static_image'
+                        value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CommunityProfile--Lincoln&#47;Population_by_ZIP&#47;1.png' />
+                    <param name='animate_transition' value='yes' />
+                    <param name='display_static_image' value='yes' />
+                    <param name='display_spinner' value='yes' />
+                    <param name='display_overlay' value='yes' />
+                    <param name='display_count' value='yes' /></object></div>
+            <script
+                type='text/javascript'>                    var divElement = document.getElementById('viz1591593813401'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+        </div>
+  
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -141,6 +156,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+    <script src="js/pictures.js"></script>
+    <script src="js/regapp.js"></script>
+    <script>renderPicture(PICTURES);</script>
     <script src="js/regions.js"></script>
     <script src="js/app.js"></script>
     <script>renderRegions(REGIONS);</script>
@@ -165,7 +183,7 @@
                 </svg>
             </a>
         </p>
-        <p style="font-size: 12px;">&copy; Lincoln County Library District 2020</p>
+        <p style="font-size: 14px;">Lincoln County Library District 2020</p>
     </div>
 </footer>
 </html>

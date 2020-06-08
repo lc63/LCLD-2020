@@ -3,7 +3,7 @@ function renderRegions(region_list) {
     return record2.voterTurnout - record1.voterTurnout;
   });
 
-  var tbody = document.querySelector("tbody");
+  var tbody = document.querySelector("tbody.table2");
   tbody.textContent = "";
   for (var i = 0; i < region_list.length; i++) {
     var row = renderRegion(region_list[i]);
