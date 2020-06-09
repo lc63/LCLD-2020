@@ -65,43 +65,55 @@
         </div>
         </div>
     </header>
-    <div class="container">
+   
     <main style="padding-bottom: 20px;background-color: black;">
         <div class="container">
+            <div class="card">
+                <div class="card-body " style="text-align: center; background-color: #638d85; color: white; ">
+            The 2019 ballot measure to extend the expiring 5-year tax levy was included in a November special election. The library
+            measure was the only one on the ballot for the majority of voters. Typically, special elections draw lower voter turnouts than general elections. Voter turnout rates varied by region. Overall, the results to extend the
+            5-year tax levy that supports the District were positive. The approval rate is well above 60% in each voting district.
+            Agate Beach, Rose Lodge, and East Toledo returned the lowest rates of approval. Agate beach is geographically close to a
+            public library (Newport) Yachats, Alsea, and Waldport have the highest approval rates. These districts are similarly
+            situated at the south end of the county. Though Waldport has a city library, Waldport voters overwhelmingly approved
+            extending the levy with an above average voter turnout. Yachats has a volunteer-run library that is not a part of the
+            District.
+                </div>
+            </div>
             <div class="row py-5">
                 <div class="col">
                     <form>
                         <div class="form-group">
-                            <label for="animation-select">Choose Region to View Results</label>
+                            <label for="animation-select">Choose Region to Narrow Results</label>
                             <select class="form-control" id="choose-region" style="width: 300;">
                                 
                                 <option value="">All</option>
                                 <option value="County totals">County totals</option>
-                                <option value="Waldport">Waldport</option>
-                                <option value="Alsea">Alsea</option>
-                                <option value="Seaview">Seaview</option>
-                                <option value="Tidewater">Tidewater</option>
-                                <option value="Yachats">Yachats</option>
-                                <option value="Bayview">Bayview</option>
-                                <option value="Seal Rock">Seal Rock</option>
-                                <option value="South Beach">South Beach</option>
-                                <option value="Yaquina">Yaquina</option>
                                 <option value="Agate Beach">Agate Beach</option>
-                                <option value="Otter Rock">Otter Rock</option>
-                                <option value="Depoe Bay">Depoe Bay</option>
-                                <option value="Fogarty Creek">Fogarty Creek</option>
-                                <option value="Kern">Kern</option>
-                                <option value="Schooner Creek">Schooner Creek</option>
-                                <option value="Sunset West">Sunset West</option>
-                                <option value="Sunset East">Sunset East</option>
-                                <option value="Rose Lodge">Rose Lodge</option>
+                                <option value="Alsea">Alsea</option>
+                                <option value="Bayview">Bayview</option>
                                 <option value="Big Elk">Big Elk</option>
-                                <option value="Elk City">Elk City</option>
-                                <option value="Fruitvale">Fruitvale</option>
-                                <option value="Eddyville">Eddyville</option>
-                                <option value="Siletz">Siletz</option>
-                                <option value="Rock Creek">Rock Creek</option>
+                                <option value="Depoe Bay">Depoe Bay</option>
                                 <option value="East Toledo">East Toledo</option>
+                                <option value="Eddyville">Eddyville</option>
+                                <option value="Elk City">Elk City</option>
+                                <option value="Fogarty Creek">Fogarty Creek</option>
+                                <option value="Fruitvale">Fruitvale</option>
+                                <option value="Kern">Kern</option>
+                                <option value="Otter Rock">Otter Rock</option>
+                                <option value="Rock Creek">Rock Creek</option>
+                                <option value="Rose Lodge">Rose Lodge</option>
+                                <option value="Schooner Creek">Schooner Creek</option>
+                                <option value="Seal Rock">Seal Rock</option>
+                                <option value="Seaview">Seaview</option>
+                                <option value="Siletz">Siletz</option>
+                                <option value="South Beach">South Beach</option>
+                                <option value="Sunset East">Sunset East</option>
+                                <option value="Sunset West">Sunset West</option> 
+                                <option value="Tidewater">Tidewater</option>
+                                <option value="Waldport">Waldport</option>
+                                <option value="Yachats">Yachats</option>
+                                <option value="Yaquina">Yaquina</option>
                             </select>
                         </div>
                     </form>
@@ -110,16 +122,16 @@
                             <thead class="thead-dark">
                                 <tr>
                                     <th style="color: #0097ad; text-align: left;" scope="col">Name </th>
-                                    <th style="color: #0097ad; text-align: left;" scope="col">Voter turnout</th>
+                                    <th style="color: #0097ad; text-align: left;" scope="col">Voter turnout (%)</th>
                                     <th style="color: #0097ad;" scope="col">Yes votes</th>
                                     <th style="color: #0097ad; text-align: right" scope="col">Closest library</th>
-                                    <th style="color: #0097ad;" scope="col">Distance to library</th>
+                                    <th style="color: #0097ad;" scope="col">Distance to library (mi)</th>
             
                                 </tr>
                             </thead>
                             <tbody class="table2"></tbody>
                     </table>
-                    </div>
+                    
                 </main>
         <div class="container" style="margin-bottom: 6rem;">
             <div class="card">
@@ -156,9 +168,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
-    <script src="js/pictures.js"></script>
-    <script src="js/regapp.js"></script>
-    <script>renderPicture(PICTURES);</script>
+    
     <script src="js/regions.js"></script>
     <script src="js/app.js"></script>
     <script>renderRegions(REGIONS);</script>

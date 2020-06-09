@@ -74,7 +74,7 @@ comprehensive approach
           <div class="col mb-4">
             <div class="card">
               <div class="card-body">
-                <h5 class="card-title" style="text-align: center;background-color: #638d85">Marketing </h5>
+                <h5 class="card-title" style="text-align: center; color: white; background-color: #638d85">Marketing </h5>
                 <div class="d-flex p-3 bd-highlight" style="color: black;font-size:1rem;">
                  <p align= "center" style="margin-right:10px; ">
                   The courier can draw more attention to the District is through the courier vehicle itself in the tradition of
@@ -83,10 +83,23 @@ comprehensive approach
                   District presence across the county.
                  </p>
                 </div>
-                <div class="center" style="color: black;font-size:1rem;">
-                <p align= "center" style="margin-left:10px;">
-                  <img src="img/van.png" alt="van option" style="width:100% height: auto;" >
-                </p>
+                <div class="flex-container" style="color: black;font-size:1rem;display:flex">
+
+                 
+               <div align= "center" >
+                  <img id="myImg2" src="img/van.png" alt="van option" style="width:130%; float: left;  padding-top: 60px;" >
+                  <p >Example of colorful van</p>
+                </div>
+                <div align="center" >
+                  <img id="myImg" src="img/insert.png" alt="Example of informational insert" style="width:30%; margin-left: 6rem;">
+                  <p style="margin-left: 6rem;">Example of courier insert </p>
+                </div>
+                <div id="myModal" class="modal">
+                  <span class="close">&times;</span>
+                  <img class="modal-content" id="img01">
+                  <div id="caption"></div>
+                </div>
+
                 </div>
               </div>
             </div>
@@ -94,11 +107,12 @@ comprehensive approach
           <div class="col mb-4">
             <div class="card">
               <div class="card-body">
-                <h5 class="card-title" style="text-align: center;background-color: #638d85;">Feedback Design </h5>
+                <h5 class="card-title" style="text-align: center;color: white; background-color: #638d85;">Feedback Design </h5>
                 <p class="card-text" style="color: black;font-size:1rem;">
                   Community feedback collection is driven by surveys and a survey will be the main data collection method for this
-                  campaign. There are some aspects of feedback collection for which surveys are not optimized. Ideally, a few feedback
-                  methods are used concurrently. Some methods, like a survey, are passive and some are engaging, establishing
+                  campaign. There are some aspects of feedback collection for which surveys are not optimized. 
+                  
+                  Ideally, a few feedback methods are used concurrently. Some methods, like a survey, are passive and some are engaging, establishing
                   relationships between District staff and community members. In order to simplify this process, the campaign will
                   encompass the entire county and embrace responses from residents of both incorporated and unincorporated areas. However,
                   residents of unincorporated areas should make up the majority of the sample. The target sample size for a county-wide
@@ -110,7 +124,7 @@ comprehensive approach
 </div>
 <!--end marketing-->
 <!--begin survey-->
-  <div class="content" style = "padding-top: 20px; margin-top: 1rem; float:left;">
+  <div class="content" style = "padding-top: 10px; margin-bottom: 2rem; float:left;">
     <div class="accordion" id="accordionExample">
       <div class="card" style="background-color: black;">
         <div class="card-header float-left" id="headingOne" style="background-color: #638d85;">
@@ -140,6 +154,21 @@ comprehensive approach
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     crossorigin="anonymous"></script>
+    <script>
+    var modal = document.getElementById("myModal");
+    var img = document.getElementById("myImg");
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+    }
+      var span = document.getElementsByClassName("close")[0];
+        span.onclick = function() {
+        modal.style.display = "none";
+        }
+        </script>
 </body>
 <script type="javascript" src="dist/js/bootstrap.js"></script>
 <footer>
@@ -153,7 +182,7 @@ comprehensive approach
             d="M22.676 0H1.324C.593 0 0 .593 0 1.324v21.352C0 23.408.593 24 1.324 24h11.494v-9.294H9.689v-3.621h3.129V8.41c0-3.099 1.894-4.785 4.659-4.785 1.325 0 2.464.097 2.796.141v3.24h-1.921c-1.5 0-1.792.721-1.792 1.771v2.311h3.584l-.465 3.63H16.56V24h6.115c.733 0 1.325-.592 1.325-1.324V1.324C24 .593 23.408 0 22.676 0" />
         </svg>
       </a>
-      <a href="mailto:">
+      <a href="mailto:lc63@uw.edu">
         <svg aria-labelledby="simpleicons-gmail-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <title id="simpleicons-gmail-icon">Gmail icon</title>
           <path
