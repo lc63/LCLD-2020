@@ -4,7 +4,7 @@
   "description": "It showcases: - Graphs and tables - Textual analysis of the data - Recommendations for the District's upcoming feedback campaign",
   "main": "index.js",
   "dependencies": {
-    "browser-sync": "^2.26.7"
+    "browser-sync": "^2.27.10"
   },
   "devDependencies": {},
   "scripts": {
